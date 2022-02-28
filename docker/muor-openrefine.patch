@@ -1,0 +1,37 @@
+diff --git a/main/webapp/modules/core/index.vt b/main/webapp/modules/core/index.vt
+index 94b5efdb6..16a3f28b1 100644
+--- a/main/webapp/modules/core/index.vt
++++ b/main/webapp/modules/core/index.vt
+@@ -46,6 +46,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+   <div id="header">
+     <img alt="OpenRefine" src="images/logo-openrefine-550.png" height="29" />
+     <span id="slogan"></span>
++    <a href="./logout">Logout</a>
+   </div>
+   
+   <div id="left-panel" class="main-layout-panel"><div id="left-panel-body">
+diff --git a/main/webapp/modules/core/project.vt b/main/webapp/modules/core/project.vt
+index a0c33ec31..1a6d66e99 100644
+--- a/main/webapp/modules/core/project.vt
++++ b/main/webapp/modules/core/project.vt
+@@ -48,7 +48,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+       <a id="app-home-button" href="./"><img alt="OpenRefine" src="images/logo-openrefine-550.png" height="29" /></a>
+       <div id="project-title">
+         <span id="project-name-button" class="app-path-section"></span>
+-        <a id="project-permalink-button" href="javascript:{}" class="secondary"></a>
++        <a href="./logout">Logout</a>
+       </div>
+       <div id="project-controls">
+         <a href="./" class="button" target="_blank"><span id="or-proj-open"></span></a>
+diff --git a/main/webapp/modules/core/styles/index.less b/main/webapp/modules/core/styles/index.less
+index e26731624..3905ae01a 100644
+--- a/main/webapp/modules/core/styles/index.less
++++ b/main/webapp/modules/core/styles/index.less
+@@ -46,6 +46,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+   font-style: italic;
+   font-size: 110%;
+   color: @near_black;
++  white-space: nowrap;
+   }
+ 
+ #left-panel-body {

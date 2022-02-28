@@ -1,0 +1,7 @@
+Django
+django-crispy-forms
+docker
+uwsgi
+celery
+redis
+django-redis

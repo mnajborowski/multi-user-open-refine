@@ -1,0 +1,17 @@
+<!-- templates/home.html-->
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <p>Hi {{ user.username }}!</p>
+        <p><a href="/">Go to your instance</a></p>
+        <p><a href="{% url 'logout' %}" class="btn btn-light">Log Out</a></p>
+    {% else %}
+        <p>You are not logged in</p>
+        <p><a href="{% url 'login' %}" class="btn btn-light">Log In</a></p>
+        <p><a href="{% url 'signup' %}" class="btn btn-light">Create an
+            account</a></p>
+    {% endif %}
+{% endblock %}
