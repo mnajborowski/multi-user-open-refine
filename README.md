@@ -4,7 +4,7 @@
 
 ## Description
 MultiUserOpenRefine is an extension to open-source tool that, in addition to all
-the features described below, allows creating user accounts, each providing
+the features described on ![OpenRefine official website](https://openrefine.org/), allows creating user accounts, each providing
 private workspace and leaving the convenience of running the basic OpenRefine
 tool on a remote server.
 
